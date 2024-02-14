@@ -19,7 +19,9 @@ function Header() {
             <div className='flex justify-center items-center w-full h-[120px] max-[720px]:h-[100px] bg-[#141414]'>
 
                 <div className=' flex justify-between relative items-center resize-none w-[1300px] h-full  '>
-                    <div className=' flex items-center gap-3 max-[1300px]:ml-10'>
+                    <div className=' flex items-center gap-3 max-[1300px]:ml-10 max-[430px]:ml-4'>
+                        
+                        {/* Logo */}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className='relative bottom-[10px] w-[75px]'
@@ -40,20 +42,20 @@ function Header() {
                             ></path>
                         </svg>
 
-                        <div className='relative top-[2px] text-[20px] text-[#e4e2e2] font-bold'>COSTG</div>
+                        <div className='max-[340px]:hidden relative top-[2px] text-[20px] text-[#e4e2e2] font-bold'>COSTG</div>
                     </div>
 
                     <div className=' max-[720px]:hidden flex mr-5 ml-5 w-[60%] h-[42px]'>
                         <HeaderSearch isOnMobile={false}></HeaderSearch>
                     </div>
 
-                    <div className=' flex max-[720px]:gap-5 items-center justify-center h-[40px] max-[1300px]:mr-10 '>
+                    <div className=' flex max-[720px]:gap-5 items-center justify-center h-[40px] max-[1300px]:mr-10 max-[430px]:mr-4 '>
 
                         {/* Search Icon */}
                         <div className='flex w-full h-full min-[720px]:hidden cursor-pointer' onClick={handleClickedOnSearch}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className='w-[30px]'
+                                className='w-[30px] max-[340px]:w-[25px]'
                                 x="0"
                                 y="0"
                                 version="1.1"
@@ -65,17 +67,18 @@ function Header() {
                             </svg>
                         </div>
 
+                        {/* Icone Sacola */}
                         <div className='flex w-full h-full'>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="relative bottom-[2px] w-[40px]"
+                                className="relative bottom-[2px] w-[40px] max-[340px]:w-[30px]"
                                 viewBox="0 0 512 512"
                                 fill='white'
                                 >
                                 <path d="M454.65 169.4A31.82 31.82 0 00432 160h-64v-16a112 112 0 00-224 0v16H80a32 32 0 00-32 32v216c0 39 33 72 72 72h272a72.22 72.22 0 0050.48-20.55 69.48 69.48 0 0021.52-50.2V192a31.75 31.75 0 00-9.35-22.6zM176 144a80 80 0 01160 0v16H176zm192 96a112 112 0 01-224 0v-16a16 16 0 0132 0v16a80 80 0 00160 0v-16a16 16 0 0132 0z"></path>
                             </svg>
-                            <div className=' relative flex items-center justify-center right-[10px] top-[-3px] bg-[#B29E9E] w-[25px] h-[25px] rounded-full'>
-                                <div className=' text-white font-black'>0</div>
+                            <div className=' relative flex items-center justify-center right-[10px] top-[-3px] bg-[#B29E9E] w-[25px] h-[25px] max-[340px]:w-[20px] max-[340px]:h-[20px] rounded-full'>
+                                <div className=' text-white font-black max-[340px]:text-sm'>0</div>
                             </div>
                         </div>
 

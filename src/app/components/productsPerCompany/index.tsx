@@ -8,7 +8,7 @@ interface ProductsPerCompanyProps {
 function ProductsPerCompany({companyName}: ProductsPerCompanyProps) {
   return (
     <>
-        <div className=' flex flex-col gap-5 w-full justify-center items-center mt-16'>
+        <div className=' flex flex-col gap-5 w-[95%] justify-center items-center mt-16'>
 
             <div className='text-[#040716] text-opacity-80 font-bold text-[45px]'>{companyName}</div>
 

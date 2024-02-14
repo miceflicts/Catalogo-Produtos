@@ -2,6 +2,7 @@ import Carousel from "./components/carousel";
 import CompanyFilter from "./components/companyFilter";
 import Layout from "./components/layout";
 import ProductsPerCompany from "./components/productsPerCompany";
+import Footer from "./layouts/footer";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
     <>
       <Layout></Layout>
 
-      <div className=" flex justify-center min-w-[100vw] min-h-[100vh] bg-[#F7F7F7]">
+      <div className=" flex justify-center">
 
         <div className=" flex items-center flex-col w-[1500px] mt-8">
           <Carousel></Carousel>
@@ -18,7 +19,11 @@ export default function Home() {
 
           <ProductsPerCompany companyName={"Nike"}></ProductsPerCompany>
         </div>
+
       </div>
+
+      <Footer></Footer>
+
     </>
   );
 }
