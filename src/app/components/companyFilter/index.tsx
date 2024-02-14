@@ -23,26 +23,18 @@ import {
 
 function CompanyFilter() {
 
-    const frameworks = [
+    const marcas = [
         {
-          value: "next.js",
-          label: "Next.js",
+          value: "nike",
+          label: "Nike",
         },
         {
-          value: "sveltekit",
-          label: "SvelteKit",
+          value: "adidas",
+          label: "Adidas",
         },
         {
-          value: "nuxt.js",
-          label: "Nuxt.js",
-        },
-        {
-          value: "remix",
-          label: "Remix",
-        },
-        {
-          value: "astro",
-          label: "Astro",
+          value: "puma",
+          label: "Puma",
         },
     ]
 
@@ -63,7 +55,7 @@ function CompanyFilter() {
                                 className=" text-[15px] text-[#AAA9A5] bg-transparent hover:bg-transparent w-[99%] justify-between"
                                 >
                                 {value
-                                    ? frameworks.find((framework) => framework.value === value)?.label
+                                    ? marcas.find((framework) => framework.value === value)?.label
                                     : "Pesquise por marca..."}
                                 <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0" />
                             </Button>
@@ -74,7 +66,7 @@ function CompanyFilter() {
                         <CommandInput placeholder="Pesquise por marca..." />
                         <CommandEmpty>Nós ainda não temos essa marca</CommandEmpty>
                         <CommandGroup>
-                            {frameworks.map((framework) => (
+                            {marcas.map((framework) => (
                             <CommandItem
                                 key={framework.value}
                                 value={framework.value}
