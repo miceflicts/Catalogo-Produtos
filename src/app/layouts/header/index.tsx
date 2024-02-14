@@ -1,12 +1,22 @@
+"use client"
+
 import HeaderSearch from '@/app/components/headerSearch'
-import React from 'react'
+import React,{useState} from 'react'
 
 function Header() {
+  
+    const [isShowingSearchArea, setIsShowingSearchArea] = useState(false)
+
+    const handleClickedOnSearch = () => {
+        setIsShowingSearchArea(!isShowingSearchArea)
+    }
+
+
   return (
     <>
         <div className=' flex flex-col w-full'>
 
-            <div className='flex justify-center items-center w-full h-[120px] bg-[#141414]'>
+            <div className='flex justify-center items-center w-full h-[120px] max-[720px]:h-[100px] bg-[#141414]'>
 
                 <div className=' flex justify-between relative items-center resize-none w-[1300px] h-full  '>
                     <div className=' flex items-center gap-3 max-[1300px]:ml-10'>
@@ -34,12 +44,13 @@ function Header() {
                     </div>
 
                     <div className=' max-[720px]:hidden flex mr-5 ml-5 w-[60%] h-[42px]'>
-                        <HeaderSearch></HeaderSearch>
+                        <HeaderSearch isOnMobile={false}></HeaderSearch>
                     </div>
 
                     <div className=' flex max-[720px]:gap-5 items-center justify-center h-[40px] max-[1300px]:mr-10 '>
 
-                        <div className='flex w-full h-full min-[720px]:hidden'>
+                        {/* Search Icon */}
+                        <div className='flex w-full h-full min-[720px]:hidden cursor-pointer' onClick={handleClickedOnSearch}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className='w-[30px]'
@@ -77,6 +88,12 @@ function Header() {
                 </div>
 
             </div>
+
+            {isShowingSearchArea ? (
+                <div className='flex justify-center min-[720px]:hidden w-full h-[60px] bg-[#141414]'>
+                    <HeaderSearch isOnMobile={true}></HeaderSearch>
+                </div>
+            ) : null}
 
             <div className='w-full h-[6px] bg-gradient-to-r from-black/45 to-[#ECBCA1]'></div>
         </div>

@@ -1,9 +1,13 @@
 import React from 'react'
 
-function HeaderSearch() {
+interface HeaderSearchProps {
+  isOnMobile: boolean;
+}
+
+function HeaderSearch({isOnMobile}: HeaderSearchProps) {
   return (
     <>
-        <div className=' flex w-full rounded-xl items-center justify-between h-[45px] bg-[#FDFCF7] border-[1px] border-[#584F4F] '>
+        <div className={`flex ${isOnMobile ? "w-[87%]" : "w-full"} rounded-xl items-center justify-between h-[45px] bg-[#FDFCF7] border-[1px] border-[#584F4F]`}>
 
             <div className=' ml-5 text-[15px] text-[#AAA9A5]'>Pesquisa por produto...</div>
 
