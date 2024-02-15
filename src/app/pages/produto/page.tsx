@@ -14,8 +14,8 @@ function Produto() {
       <div className=' w-full h-full flex flex-col items-center gap-20'>
         <div className=" flex justify-center">
 
-          <div className=' flex w-[90vw] items-center justify-center '>
-            <div className=" flex justify-center gap-5 w-[1500px] mt-8">
+          <div className=' flex w-[90vw] items-center justify-center  '>
+            <div className=" flex justify-center gap-5 w-[1600px] mt-8 ">
                 <ProductImages></ProductImages>
                 <ProductInfos></ProductInfos>
             </div>
