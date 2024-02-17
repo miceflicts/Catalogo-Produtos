@@ -2,7 +2,13 @@
 
 import React,{useState} from 'react'
 import { Truck, Undo2, ShieldCheck, Award, Plus, Minus } from 'lucide-react'
-function ProductInfos() {
+
+interface ProductsImageProps {
+    productInfos: any;
+}
+
+
+function ProductInfos({productInfos} : ProductsImageProps) {
 
     const [isHoveringBuyButton, setIsHoveringBuyButton] = useState(false)
     const [numberOfProductsToBuy, setNumberOfProductsToBuy] = useState(1)
@@ -25,7 +31,7 @@ function ProductInfos() {
             
             <div className=' w-[90%] h-[90%] '>
                 <div className=' w-full flex gap-5 mt-6'>
-                    <div className=' flex w-[90%] text-[22px] break-words '>Chuteira Nike Mercurial Vapor XIV Elite pro </div>
+                    <div className=' flex w-[90%] text-[22px] break-words '>{productInfos.title}</div>
                 </div>
 
                 <div className=' w-full h-[1px] bg-gray-300 rounded-lg mt-5'></div>

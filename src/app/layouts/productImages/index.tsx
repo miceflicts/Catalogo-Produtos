@@ -1,38 +1,46 @@
 "use client"
 
 import ProductsImagesThumbnail from '@/app/components/productImagesThumbnail'
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import { Search } from 'lucide-react'
 import Image from 'next/image'
 import Chuteira from "@/app/assets/imgs/chuteira.jpg"
 
-import ProductInfos from "@/app/productsJson/produtos.json"
 
+interface ProductsImageProps {
+  productInfos: any;
+}
 
-function ProductImages() {
+function ProductImages({productInfos}: ProductsImageProps) {
+
+  console.log(productInfos.images)
 
   const [highlightedImage, setHighlightedImage] = useState("")
 
-  const handleClick = () => {
-    console.log(ProductInfos)
-  }
+
+/* 
+  productInfos.images.map((image: { src: string}) => (
+    console.log(image.src)
+  )) */
+
 
   return (
     <div className='flex max-[1000px]:flex-col max-[1000px]:min-w-[90%] max-[1000px]:max-w-[90%] min-w-[44%] w-max p-5 gap-5 rounded-xl h-fit bg-white max-[600px]:min-w-[100vw] min-[600px]:shadow-lg'>
 
 
         <div className='max-[1000px]:hidden flex flex-col gap-4 mt-4'>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
+
+            {productInfos !== "" && productInfos.images && productInfos.images.map((image: {src:string}, index: number) => (
+                <ProductsImagesThumbnail key={index} image={image.src}></ProductsImagesThumbnail>
+            ))}
+
         </div>
 
+
         <div className='flex items-center flex-col w-full h-full'>
-            <div className=' flex h-[90%] w-[90%] mt-4 ' onClick={handleClick}>
+            <div className=' flex h-[90%] w-[90%] mt-4 '>
                 <Image
-                src={ProductInfos[0][0].Images[2].src}
+                src={productInfos.images !== undefined ? productInfos.images[0].src : ""}
                 width={0}
                 height={0}
                 sizes="100vw"
@@ -48,11 +56,9 @@ function ProductImages() {
         </div>
 
         <div className='min-[1000px]:hidden flex gap-4 ml-3 mt-2'>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
-            <ProductsImagesThumbnail></ProductsImagesThumbnail>
+{/*             {productInfos.images.map((image: {src:string}, index: number) => (
+              <ProductsImagesThumbnail key={index} image={image.src}></ProductsImagesThumbnail>
+            ))} */}
         </div>
 
     </div>
