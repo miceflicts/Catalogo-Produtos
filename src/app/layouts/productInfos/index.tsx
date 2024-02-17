@@ -21,10 +21,10 @@ function ProductInfos() {
 
   return (
     <>
-        <div className=' flex items-center justify-center w-[35%] rounded-xl h-[700px] bg-white shadow-lg'>
+        <div className=' flex items-center justify-center max-[1000px]:min-w-[90%] w-[35%] max-[600px]:min-w-[100vw] rounded-xl h-fit bg-white shadow-lg'>
             
             <div className=' w-[90%] h-[90%] '>
-                <div className=' w-full flex gap-5'>
+                <div className=' w-full flex gap-5 mt-6'>
                     <div className=' flex w-[90%] text-[22px] break-words '>Chuteira Nike Mercurial Vapor XIV Elite pro </div>
                 </div>
 
@@ -91,7 +91,7 @@ function ProductInfos() {
                     </div>
                 </div>
 
-                <div className='flex flex-col gap-2 w-full h-[130px] rounded-xl mt-6'>
+                <div className='flex flex-col gap-2 w-full h-[130px] rounded-xl mt-6 mb-6'>
 
                     <div className='flex pisca gap-1 items-center justify-center h-2/4 transition-all ease-in-out delay-100 hover:scale-[1.03] bg-green-600 hover:bg-green-600/80 rounded-2xl cursor-pointer'>
                         <div className=' text-white font-bold'>Comprar Agora</div>

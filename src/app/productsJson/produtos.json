@@ -1,0 +1,586 @@
+[
+    [
+        {
+            "title": "Chuteira Nike Air Zoom Mercurial",
+            "company": "Nike",
+            "id": "gvkUed8t",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/5taawnm.png",
+                    "is-variant": true,
+                    "variant-name": "Azul e Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/nDfm21E.png",
+                    "is-variant": true,
+                    "variant-name": "Rosa"
+                },
+                {
+                    "src": "https://i.imgur.com/vBy49Ds.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/p5F5HWP.png",
+                    "is-variant": true,
+                    "variant-name": "Amarelo"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Nike Mercurial Vapor XIV Elite pro",
+            "company": "Nike",
+            "id": "rdepRNy0",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/vTRUTO2.png",
+                    "is-variant": true,
+                    "variant-name": "Azul e Verde"
+                },
+                {
+                    "src": "https://i.imgur.com/F1y73Dt.png",
+                    "is-variant": false,
+                    "variant-name": "Azul e Verde"
+                },
+                {
+                    "src": "https://i.imgur.com/irruy95.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/60HPUqa.png",
+                    "is-variant": false,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/7bK3S2O.png",
+                    "is-variant": true,
+                    "variant-name": "Azul e Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/PAtgvgy.png",
+                    "is-variant": false,
+                    "variant-name": "Azul e Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/cszKX6Y.png",
+                    "is-variant": true,
+                    "variant-name": "Preto e Verde"
+                },
+                {
+                    "src": "https://i.imgur.com/vrdtfkA.png",
+                    "is-variant": false,
+                    "variant-name": "Preto e Verde"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Nike Phantom GX Elite",
+            "company": "Nike",
+            "id": "jEIRTVd9",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/xJu9imR.png",
+                    "is-variant": true,
+                    "variant-name": "Rosa"
+                },
+                {
+                    "src": "https://i.imgur.com/pIVUy6Z.png",
+                    "is-variant": false,
+                    "variant-name": "Rosa"
+                },
+                {
+                    "src": "https://i.imgur.com/9JMKNFt.png",
+                    "is-variant": true,
+                    "variant-name": "Cinza e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/h6txmm4.png",
+                    "is-variant": false,
+                    "variant-name": "Cinza e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/dP6hV2c.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Marrom"
+                },
+                {
+                    "src": "https://i.imgur.com/nE7mSV0.png",
+                    "is-variant": false,
+                    "variant-name": "Branco e Marrom"
+                },
+                {
+                    "src": "https://i.imgur.com/gcevLua.png",
+                    "is-variant": true,
+                    "variant-name": "Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/I9z2ySW.png",
+                    "is-variant": false,
+                    "variant-name": "Vermelho"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Nike tiempo 9 legend Elite",
+            "company": "Nike",
+            "id": "TVsYIHkq",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/UBEqz46.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/6kDOthG.png",
+                    "is-variant": false,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/SrJAa1D.png",
+                    "is-variant": true,
+                    "variant-name": "Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/B4EQM5E.png",
+                    "is-variant": false,
+                    "variant-name": "Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/lCocpzO.png",
+                    "is-variant": true,
+                    "variant-name": "Preto e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/OAWfW07.png",
+                    "is-variant": false,
+                    "variant-name": "Preto e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/1hoJTMU.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/lbR40DO.png",
+                    "is-variant": false,
+                    "variant-name": "Branco e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/W2hDjdZ.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Verde"
+                },
+                {
+                    "src": "https://i.imgur.com/nnp6BJt.png",
+                    "is-variant": false,
+                    "variant-name": "Branco e Verde"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Nike tiempo 10 legend Elite",
+            "company": "Nike",
+            "id": "9BeguTeV",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/mv1kFnm.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Bronze"
+                },
+                {
+                    "src": "https://i.imgur.com/MqMN5Ng.png",
+                    "is-variant": false,
+                    "variant-name": "Branco e Bronze"
+                },
+                {
+                    "src": "https://i.imgur.com/lU9dBDK.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/kx0zq3r.png",
+                    "is-variant": true,
+                    "variant-name": "Azul Marinho"
+                },
+                {
+                    "src": "https://i.imgur.com/Q8B3Hld.png",
+                    "is-variant": false,
+                    "variant-name": "Azul Marinho"
+                },
+                {
+                    "src": "https://i.imgur.com/PL700z6.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/0wCTpOq.png",
+                    "is-variant": false,
+                    "variant-name": "Branco e Preto"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Adidas Predator Edge",
+            "company": "Adidas",
+            "id": "FQKtmqAU",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/ZuWChCX.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/trO7rHK.png",
+                    "is-variant": false,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/K8V63nx.png",
+                    "is-variant": true,
+                    "variant-name": "Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/NQFo9Co.png",
+                    "is-variant": false,
+                    "variant-name": "Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/HGZO8fM.png",
+                    "is-variant": true,
+                    "variant-name": "Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/DL4S4jV.png",
+                    "is-variant": false,
+                    "variant-name": "Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/sno61rr.png",
+                    "is-variant": true,
+                    "variant-name": "Roxo com Rosa"
+                },
+                {
+                    "src": "https://i.imgur.com/VoJ5qrO.png",
+                    "is-variant": false,
+                    "variant-name": "Roxo com Rosa"
+                },
+                {
+                    "src": "https://i.imgur.com/6G9ilYD.png",
+                    "is-variant": true,
+                    "variant-name": "Rosa com Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/gRiEYYb.png",
+                    "is-variant": false,
+                    "variant-name": "Rosa com Branco"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Adidas Predator Freak 2.0",
+            "company": "Adidas",
+            "id": "PWvLpkte",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/f6Gawa9.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/vLtHcbk.png",
+                    "is-variant": true,
+                    "variant-name": "Branco com Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/ckolWSr.png",
+                    "is-variant": true,
+                    "variant-name": "Branco com Verde"
+                },
+                {
+                    "src": "https://i.imgur.com/awu0KnT.png",
+                    "is-variant": true,
+                    "variant-name": "Branco com Laranja e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/yxnvURV.png",
+                    "is-variant": true,
+                    "variant-name": "Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/zfr565V.png",
+                    "is-variant": true,
+                    "variant-name": "Rosa com Preto"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Adidas Predator Freak Pro",
+            "company": "Adidas",
+            "id": "qhysZSlk",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/9TqNxdi.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/RqjRu8G.png",
+                    "is-variant": false,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/mZ5oKVg.png",
+                    "is-variant": true,
+                    "variant-name": "Branco e Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/NRDy1wI.png",
+                    "is-variant": false,
+                    "variant-name": "Branco e Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/G2tNLfj.png",
+                    "is-variant": true,
+                    "variant-name": "Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/2JVenzw.png",
+                    "is-variant": false,
+                    "variant-name": "Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/wvWJE3t.png",
+                    "is-variant": true,
+                    "variant-name": "Rosa e Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/nhcK1gd.png",
+                    "is-variant": false,
+                    "variant-name": "Laranja"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Adidas Speedflow",
+            "company": "Adidas",
+            "id": "J5Qwhc05",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/097gUP2.png",
+                    "is-variant": true,
+                    "variant-name": "Preto e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/ccG8fBb.png",
+                    "is-variant": false,
+                    "variant-name": "Preto e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/SSpZZM2.png",
+                    "is-variant": true,
+                    "variant-name": "Laranja"
+                },
+                {
+                    "src": "https://imgur.com/nDfm21E",
+                    "is-variant": false,
+                    "variant-name": "Laranja"
+                },
+                {
+                    "src": "https://i.imgur.com/Twgo7ad.png",
+                    "is-variant": true,
+                    "variant-name": "Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/TZ2akEx.png",
+                    "is-variant": false,
+                    "variant-name": "Vermelho"
+                },
+                {
+                    "src": "https://i.imgur.com/D8GbOHC.png",
+                    "is-variant": true,
+                    "variant-name": "Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/WSHeuZ5.png",
+                    "is-variant": false,
+                    "variant-name": "Azul"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Puma Future Ultimate",
+            "company": "Puma",
+            "id": "QbZliPhs",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/Fp7lrP1.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/oP0APjg.png",
+                    "is-variant": false,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/gk3Tq07.png",
+                    "is-variant": true,
+                    "variant-name": "Amarelo"
+                },
+                {
+                    "src": "https://i.imgur.com/uMZHTPe.png",
+                    "is-variant": false,
+                    "variant-name": "Amarelo"
+                },
+                {
+                    "src": "https://i.imgur.com/wiqhPPx.png",
+                    "is-variant": true,
+                    "variant-name": "Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/xfYFg9X.png",
+                    "is-variant": false,
+                    "variant-name": "Azul"
+                }
+            ]
+        },
+        {
+            "title": "Chuteira Puma ultra 13 city",
+            "company": "Puma",
+            "id": "gyCSW996",
+            "has-variants": true,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/ypdjRoi.png",
+                    "is-variant": true,
+                    "variant-name": "Preto e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/vT8f5s0.png",
+                    "is-variant": false,
+                    "variant-name": "Preto e Azul"
+                },
+                {
+                    "src": "https://i.imgur.com/r15gFzF.png",
+                    "is-variant": true,
+                    "variant-name": "Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/D30WTwz.png",
+                    "is-variant": false,
+                    "variant-name": "Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/D30WTwz.png",
+                    "is-variant": false,
+                    "variant-name": "Branco"
+                },
+                {
+                    "src": "https://i.imgur.com/aCBZiau.png",
+                    "is-variant": true,
+                    "variant-name": "Azul escuro e Amarelo"
+                },
+                {
+                    "src": "https://i.imgur.com/lB3obye.png",
+                    "is-variant": true,
+                    "variant-name": "Azul escuro e Amarelo"
+                },
+                {
+                    "src": "https://i.imgur.com/vHKRl9Y.png",
+                    "is-variant": true,
+                    "variant-name": "Preto"
+                },
+                {
+                    "src": "https://i.imgur.com/XwRRLw8.png",
+                    "is-variant": false,
+                    "variant-name": "Preto"
+                }
+            ]
+        }
+        
+    ],
+    [
+        {
+            "title": "Canelito (Meião Cortado)",
+            "company": "",
+            "id": "grEKhh1L",
+            "has-variants": false,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/41AEIcg.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                },
+                {
+                    "src": "https://i.imgur.com/xYJ0YnE.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                }
+            ]
+        },
+        {
+            "title": "Meia Prosocks",
+            "company": "",
+            "id": "CulYo4Ec",
+            "has-variants": false,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/yje6il9.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                },
+                {
+                    "src": "https://i.imgur.com/JzcSHK1.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                },
+                {
+                    "src": "https://i.imgur.com/RvYCJGH.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "title": "Nécessaire preta Xadrez",
+            "company": "",
+            "id": "vw2r4TzT",
+            "has-variants": false,
+            "Images": [
+                {
+                    "src": "https://i.imgur.com/KhgTfMU.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                },
+                {
+                    "src": "https://i.imgur.com/xt8cWPR.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                },
+                {
+                    "src": "https://i.imgur.com/ysxLgvE.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                },
+                {
+                    "src": "https://i.imgur.com/RO2rj7F.png",
+                    "is-variant": false,
+                    "variant-name": ""
+                }
+            ]
+        }  
+    ]
+]

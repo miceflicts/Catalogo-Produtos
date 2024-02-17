@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProductsImagesThumbnail() {
   return (
-    <div className=' w-[70px] h-[70px] rounded-md bg-slate-400'></div>
+    <div className=' aspect-square h-[70px] max-[1000px]:h-[50px] rounded-xl bg-slate-400'></div>
   )
 }
 
