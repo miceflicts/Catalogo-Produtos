@@ -13,27 +13,47 @@ import { usePathname } from 'next/navigation'
 
 
 function Produto() {
-
     const [productInfos, setProductInfos] = useState({})
 
     const pathname = usePathname()
 
     const splitPathName = pathname.split("/");
-    const productId = splitPathName.slice(3).join('/');
+    const productId = splitPathName.slice(4).join('/');
 
+    const regex = /\/produto\/([^\/]+)/;
+    const resultado = pathname.match(regex);
 
     useEffect(() => {
-      for (let i = 0; i < ProductsJson.length; i++) {
-          const products = ProductsJson[i];
-          for (let j = 0; j < products.length; j++) {
-              const product = products[j];
-              if (product.id === productId) {
-                  setProductInfos({"title": product.title, "id": product.id, "has-variants": product['has-variants'], "images": product.Images});
-                  break; // Stop looping once the product is found
-              }
-          }
+      if (resultado) {
+        for (let i = 0; i < ProductsJson.length; i++) {
+            let products = ProductsJson[i];
+  
+            if (products['product-type'] === resultado[1]) {
+  
+                for (let j = 0; j < products.products[0].Products.length; j++) {
+  
+                  console.log(products.products[0].Products)
+  
+                  let product = products.products[0].Products[j]
+                  if (product.id === productId) {
+                    console.log("found product")
+                    setProductInfos({"title": product.title, "id": product.id, "has-variants": product['has-variants'], "images": product.Images});
+                    return;
+                  }
+                }
+                console.log("No results found")
+            }
+        }
+      } else {
+        console.log("404 resultado is null")
       }
     }, []);
+
+    useEffect(() => {
+      console.log(productInfos)
+
+    }, [productInfos])
+    
 
   return (
     <>

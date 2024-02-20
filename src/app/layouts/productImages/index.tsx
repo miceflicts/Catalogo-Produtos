@@ -13,8 +13,6 @@ interface ProductsImageProps {
 
 function ProductImages({productInfos}: ProductsImageProps) {
 
-  console.log(productInfos.images)
-
   const [highlightedImage, setHighlightedImage] = useState("")
 
 

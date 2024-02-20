@@ -1,25 +1,50 @@
-import React from 'react'
-import ProductCard from '../productCard'
+"use client"
 
-import productsData from "@/app/productsJson/produtos.json"
+import React from 'react'
+import { ChevronRight, ChevronLeft } from 'lucide-react';
+
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Navigation } from 'swiper/modules';
+
+import 'swiper/css/navigation';
+import 'swiper/css';
+import "./index.css"
+
+import ProductCard from '../productCard'
 
 interface ProductsPerCompanyProps {
   companyName: string;
+  products: any;
+  productType: string
 }
 
-function ProductsPerCompany({companyName}: ProductsPerCompanyProps) {
+function ProductsPerCompany({companyName, products, productType}: ProductsPerCompanyProps) {
+  
 
   return (
     <>
-        <div className=' flex flex-col gap-5 w-[95%] justify-center items-center mt-16'>
+        <div className="flex flex-col gap-10 w-full h-[500px] mt-16">
+          <div className="w-fit flex-col">
+            <div className=" text-[#040716] text-opacity-80 font-bold text-[30px]">{companyName}</div>
+            <div className="w-full h-[5px] bg-[#ECBCA1] rounded-xl"></div>
+          </div>
+        
 
-            <div className='text-[#040716] text-opacity-80 font-bold text-[45px]'>{companyName}</div>
-
-            <div className=' flex justify-center flex-wrap gap-4 w-full mb-20'>
-                {productsData[0].map((product, index) => (
-                  <ProductCard key={index} productTitle={product.title} productImages={product.Images} productId={product.id}></ProductCard>
+          <div className="w-full h-fit flex">
+            <Swiper
+              spaceBetween={100}
+              slidesPerView={6}
+              navigation={true}     
+              modules={[Navigation]}
+              className=' w-full h-full'
+              >
+                {products.map((product:any, index:number) => (
+                  <SwiperSlide key={index} className='res-slide'>
+                    <ProductCard key={index} productTitle={product.title} productImages={product.Images} productId={product.id} productType={productType}></ProductCard>
+                  </SwiperSlide>
                 ))}
-            </div>
+            </Swiper>
+          </div>
         </div>
     </>
   )
