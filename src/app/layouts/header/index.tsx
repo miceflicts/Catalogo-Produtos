@@ -1,18 +1,89 @@
 "use client"
 
 import HeaderSearch from '@/app/components/headerSearch'
-import React,{useState} from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import Link from 'next/link'
+import CartWindow from '@/app/components/cartWindow'
 
-function Header() {
+interface HeaderProps {
+    hasAddedProductToCart?: any;
+}
+
+function Header({hasAddedProductToCart} : HeaderProps) {
   
     const [isShowingSearchArea, setIsShowingSearchArea] = useState(false)
+    const [isHoveringCartDiv, setIsHoveringCartDiv] = useState(false)
+    
+    const [isShowingCart, setIsShowingCart] = useState(false)
 
+    const [isClickingOnCartIcon, setIsClickingOnCartIcon] = useState(false);
+
+    const [cartItems, setCartItems] = useState<any[]>([]);
+
+    const cartRef = useRef<HTMLDivElement>(null);
+
+    
+    // Function to trigger a re-render when cart items are updated
+    const handleUpdateCartItems = () => {
+        // Retrieve cart items from local storage
+        const storedCartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+        setCartItems(storedCartItems);
+    };
+    
     const handleClickedOnSearch = () => {
         setIsShowingSearchArea(!isShowingSearchArea)
     }
+    
+    const handleHoverCartDiv = () => {
+        setIsHoveringCartDiv(!isHoveringCartDiv)
+    }
+    
+    
+    const handleCartToggle = () => {
+        setIsShowingCart(false);
+    };
+    
+    const handleChangeIsClickingOnCartIcon = () => {
+        setIsClickingOnCartIcon(!isClickingOnCartIcon);
+    }
+    
+    const handleCartClick = () => {
+        setIsShowingCart(!isShowingCart)
+    }
+    
+    useEffect(() => {
+      handleUpdateCartItems()
+    
+    }, [hasAddedProductToCart])
 
+    useEffect(() => {
+        handleUpdateCartItems()
+    }, [])
+    
+    useEffect(() => {
+        const handleCLickInside = (event:any) => {
+            if (cartRef.current && cartRef.current.contains(event.target)) {
+                handleChangeIsClickingOnCartIcon();
+                handleCartClick();
+            }
+        };
+        
+        document.addEventListener('mousedown', handleCLickInside);
+        
+        return () => {
+            document.removeEventListener('mousedown', handleCLickInside);
+        };
+    }, []);
+    
 
+    useEffect(() => {
+        if (isClickingOnCartIcon === false && isShowingCart === true) {
+            handleCartToggle()
+        }
+
+    }, [isClickingOnCartIcon])
+    
+    
   return (
     <>
         <div className=' flex flex-col w-full'>
@@ -50,7 +121,7 @@ function Header() {
                     </Link>
 
                     <div className=' max-[720px]:hidden flex mr-5 ml-5 w-[60%] h-[42px]'>
-                        <HeaderSearch isOnMobile={false}></HeaderSearch>
+                        <HeaderSearch></HeaderSearch>
                     </div>
 
                     <div className=' flex max-[720px]:gap-5 items-center justify-center h-[40px] max-[1300px]:mr-10 max-[430px]:mr-4 '>
@@ -72,23 +143,29 @@ function Header() {
                         </div>
 
                         {/* Icone Sacola */}
-                        <div className='flex w-full h-full'>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="relative bottom-[2px] w-[40px] max-[340px]:w-[30px]"
-                                viewBox="0 0 512 512"
-                                fill='white'
-                                >
-                                <path d="M454.65 169.4A31.82 31.82 0 00432 160h-64v-16a112 112 0 00-224 0v16H80a32 32 0 00-32 32v216c0 39 33 72 72 72h272a72.22 72.22 0 0050.48-20.55 69.48 69.48 0 0021.52-50.2V192a31.75 31.75 0 00-9.35-22.6zM176 144a80 80 0 01160 0v16H176zm192 96a112 112 0 01-224 0v-16a16 16 0 0132 0v16a80 80 0 00160 0v-16a16 16 0 0132 0z"></path>
-                            </svg>
-                            <div className=' relative flex items-center justify-center right-[10px] top-[-3px] bg-[#B29E9E] w-[25px] h-[25px] max-[340px]:w-[20px] max-[340px]:h-[20px] rounded-full'>
-                                <div className=' text-white font-black max-[340px]:text-sm'>0</div>
-                            </div>
-                        </div>
+                            <div className='flex w-full h-full items-center cursor-pointer' onMouseEnter={handleHoverCartDiv} onMouseLeave={handleHoverCartDiv} ref={cartRef}>
+                                <div className='flex w-full h-full'>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="relative bottom-[2px] w-[40px] max-[340px]:w-[30px]"
+                                        viewBox="0 0 512 512"
+                                        fill='white'
+                                        >
+                                        <path d="M454.65 169.4A31.82 31.82 0 00432 160h-64v-16a112 112 0 00-224 0v16H80a32 32 0 00-32 32v216c0 39 33 72 72 72h272a72.22 72.22 0 0050.48-20.55 69.48 69.48 0 0021.52-50.2V192a31.75 31.75 0 00-9.35-22.6zM176 144a80 80 0 01160 0v16H176zm192 96a112 112 0 01-224 0v-16a16 16 0 0132 0v16a80 80 0 00160 0v-16a16 16 0 0132 0z"></path>
+                                    </svg>
+                                    <div className={`relative flex items-center justify-center right-[10px] top-[-3px] bg-[#B29E9E] w-[25px] h-[25px] max-[340px]:w-[20px] max-[340px]:h-[20px] rounded-full transition-all ease-linear delay-150 ${isHoveringCartDiv ? "scale-[1.1]" : ""}`}>
+                                        <div className=' text-white font-black max-[340px]:text-sm'>{cartItems !== undefined ? cartItems.length : 0}</div>
+                                    </div>
+                                </div>
 
-                        <div className=' relative right-[5px] flex items-center justify-center w-full h-full max-[720px]:hidden '>
-                            <div className=' text-white font-bold'>Carrinho</div>
-                        </div>
+                                <div className=' relative right-[5px] flex items-center justify-center w-full h-full max-[720px]:hidden '>
+                                    <div className=' text-white font-bold'>Carrinho</div>
+                                </div>
+
+                                {isShowingCart ? (
+                                    <CartWindow cartItems={cartItems} isClickingOnCartIcon={isClickingOnCartIcon} closeCart={handleCartToggle} changeIsClickingOnCartIcon={handleChangeIsClickingOnCartIcon} hasUpdatedCartItems={handleUpdateCartItems}></CartWindow>   
+                                ) : null}
+                            </div>
 
                     </div>
 
@@ -98,7 +175,7 @@ function Header() {
 
             {isShowingSearchArea ? (
                 <div className='flex justify-center min-[720px]:hidden w-full h-[60px] bg-[#141414]'>
-                    <HeaderSearch isOnMobile={true}></HeaderSearch>
+                    <HeaderSearch></HeaderSearch>
                 </div>
             ) : null}
 

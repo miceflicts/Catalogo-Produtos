@@ -1,16 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
+import productsJson from "@/app/productsJson/produtos.json"
 
-interface HeaderSearchProps {
-  isOnMobile: boolean;
-}
 
-function HeaderSearch({isOnMobile}: HeaderSearchProps) {
+function HeaderSearch() {
+
+  const [searchInputValue, setSearchInputValue] = useState("")
+
+  const handleInputChange = (event:any) => {
+    setSearchInputValue(event.target.value)
+  }
+
   return (
     <>
-        <div className={`flex ${isOnMobile ? "w-[87%]" : "w-full"} rounded-xl items-center justify-between h-[45px] bg-[#FDFCF7] border-[1px] border-[#584F4F]`}>
+        <div className={`flex max-[720px]:w-[87%] w-full rounded-xl items-center justify-between h-[45px] bg-[#FDFCF7] border-[1px] border-[#584F4F]`}>
 
             <div className="ml-5 w-[87%]">
-              <input className=" w-full text-[15px] text-[#AAA9A5] border-none outline-none " placeholder="Pesquisa por produto..."/>
+              <input type='text' className=" w-full text-[15px] text-[#AAA9A5] border-none outline-none " placeholder="Pesquisa por produto..." onChange={handleInputChange} value={searchInputValue}/>
             </div>
 
             <div className=' flex items-center justify-center bg-[#B29E9E] w-[50px] h-[30px] rounded-md mr-2'>

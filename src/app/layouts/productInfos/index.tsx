@@ -1,17 +1,19 @@
 "use client"
 
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import { Truck, Undo2, ShieldCheck, Award, Plus, Minus } from 'lucide-react'
-
+import ProductVariantCard from '@/app/components/productVariantCard';
 interface ProductsImageProps {
     productInfos: any;
+    hasAddedNewProductsToCart: () => void;
 }
 
-
-function ProductInfos({productInfos} : ProductsImageProps) {
+function ProductInfos({productInfos, hasAddedNewProductsToCart} : ProductsImageProps) {
 
     const [isHoveringBuyButton, setIsHoveringBuyButton] = useState(false)
     const [numberOfProductsToBuy, setNumberOfProductsToBuy] = useState(1)
+
+    const [activeProductVariant, setActiveProductVariant] = useState({Index: 0, VariantName: "Cor: ", VariantWhatsAppMessage: `*Cor*: `, ImageSrc: ""})
 
     const handleIsHoveringBuyButton = () => {
         setIsHoveringBuyButton(!isHoveringBuyButton);
@@ -25,26 +27,50 @@ function ProductInfos({productInfos} : ProductsImageProps) {
         setNumberOfProductsToBuy(numberOfProductsToBuy >= 1 ? numberOfProductsToBuy-1 : 0)
     }
 
+    const handleSetActiveProductVariant = (value:any) => {
+        setActiveProductVariant({Index: value.index, VariantName: `Cor: ${value.variantName}`, VariantWhatsAppMessage: `*Cor*: ${value.variantName}`, ImageSrc: value.imageSrc})
+    }
+
+    const handleAddToCartClick = () => {
+        const newItem = { ProductName: productInfos.title, VariantName:  activeProductVariant.VariantWhatsAppMessage, Quantity: numberOfProductsToBuy <= 0 ? 1 : numberOfProductsToBuy, ImageSrc: activeProductVariant.ImageSrc};
+        let cartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+
+        cartItems.push(newItem);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        hasAddedNewProductsToCart();
+    }
+
+    useEffect(() => {
+        productInfos.id !== "" ? console.log(productInfos.images) : "";
+        setActiveProductVariant({Index: 0, VariantName: productInfos["has-variants"] ? `Cor: ${productInfos.images[0]["variant-name"]}` : "", VariantWhatsAppMessage: productInfos["has-variants"] ? `*Cor*: ${productInfos.images[0]["variant-name"]}` : "", ImageSrc: productInfos.images !== undefined ? productInfos.images[0].src : ""})
+    }, [productInfos])
+    
+
   return (
     <>
         <div className=' flex items-center justify-center max-[1000px]:min-w-[90%] w-[35%] max-[600px]:min-w-[100vw] rounded-xl h-fit bg-white shadow-lg'>
             
             <div className=' w-[90%] h-[90%] '>
                 <div className=' w-full flex gap-5 mt-6'>
-                    <div className=' flex w-[90%] text-[22px] break-words '>{productInfos.title}</div>
+                    <div className=' flex w-[90%] font-[600] text-[#6e6e6e] text-[25px] break-words '>{productInfos.title}</div>
                 </div>
 
                 <div className=' w-full h-[1px] bg-gray-300 rounded-lg mt-5'></div>
 
-                <div className=' flex flex-col'>
-                    <div className=' text-black/65 mt-5 text-[15px] font-semibold'>Cor: Vermelho</div>
+                {productInfos["has-variants"] ? (
+                    <div className=' flex flex-col'>
+                        <div className=' text-black/65 mt-5 text-[15px] font-semibold'>{activeProductVariant.VariantName}</div>
 
-                    <div className=' flex gap-3'>
-                        <div className='w-[50px] h-[50px] rounded-lg bg-red-300 mt-3'></div>
-                        <div className='w-[50px] h-[50px] rounded-lg bg-red-300 mt-3'></div>
-                        <div className='w-[50px] h-[50px] rounded-lg bg-red-300 mt-3'></div>
-                    </div>
-                </div>
+                            <div className=' flex w-full flex-wrap gap-3 '>
+                                {productInfos.images.map((product:any, index:number) => (
+                                    product["is-variant"] ? (
+                                        <ProductVariantCard key={index} highlightedImage={activeProductVariant.Index} index={index} variantName={product["variant-name"]} imageSrc={product.src} setActiveProductVariant={handleSetActiveProductVariant}></ProductVariantCard>
+                                    ) : null
+                                ))}
+                            </div>
+                        </div>
+                ) : null}
 
                 <div className=' flex w-full justify-center items-center h-max bg-[#F2F2F5] rounded-2xl mt-5'>
 
@@ -99,11 +125,15 @@ function ProductInfos({productInfos} : ProductsImageProps) {
 
                 <div className='flex flex-col gap-2 w-full h-[130px] rounded-xl mt-6 mb-6'>
 
-                    <div className='flex pisca gap-1 items-center justify-center h-2/4 transition-all ease-in-out delay-100 hover:scale-[1.03] bg-green-600 hover:bg-green-600/80 rounded-2xl cursor-pointer'>
-                        <div className=' text-white font-bold'>Comprar Agora</div>
+                <a href={`https://wa.me/556492913815?text=Boa%20tarde,%20tudo%20bem%3F%0AGostaria%20de%20saber%20mais%20sobre%20a%20*${productInfos.title}*%0a${activeProductVariant.VariantWhatsAppMessage}`} className='h-2/4' target="_blank" rel="noopener noreferrer">
+                    <div className='flex pisca gap-1 items-center justify-center h-full transition-all ease-in-out delay-100 hover:scale-[1.03] bg-green-600 hover:bg-green-600/80 rounded-2xl cursor-pointer'>
+                        <div className='text-white font-bold'>Comprar pelo WhatsApp</div>
                     </div>
+                </a>
 
-                    <div className='flex items-center justify-center h-2/4 border-2 transition-all ease-linear delay-100 border-gray-300 hover:bg-[#3A2A2F] hover:border-[#3A2A2F] rounded-2xl cursor-pointer' onMouseEnter={handleIsHoveringBuyButton} onMouseLeave={handleIsHoveringBuyButton} >
+
+
+                    <div className='flex items-center justify-center h-2/4 border-2 transition-all ease-linear delay-100 border-gray-300 hover:bg-[#3A2A2F] hover:border-[#3A2A2F] rounded-2xl cursor-pointer' onMouseEnter={handleIsHoveringBuyButton} onMouseLeave={handleIsHoveringBuyButton} onClick={handleAddToCartClick}>
                         <div className={` transition-all ease-linear delay-100 ${isHoveringBuyButton ? "text-white" : "text-black/65"} font-medium`}>Adicionar ao Carrinho</div>
                     </div>
 

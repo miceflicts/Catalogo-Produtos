@@ -1,6 +1,8 @@
 [
     {
         "product-type": "chuteiras-nike",
+        "has-banner": false,
+        "ref": "chuteirasRef",
         "products": [
             {
                 "is-categorized-by-company": true,
@@ -12,6 +14,7 @@
                         "company": "Nike",
                         "id": "gvkUed8t",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/5taawnm.png",
@@ -40,6 +43,7 @@
                         "company": "Nike",
                         "id": "rdepRNy0",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/vTRUTO2.png",
@@ -88,6 +92,7 @@
                         "company": "Nike",
                         "id": "jEIRTVd9",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/xJu9imR.png",
@@ -136,6 +141,7 @@
                         "company": "Nike",
                         "id": "TVsYIHkq",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/UBEqz46.png",
@@ -194,6 +200,7 @@
                         "company": "Nike",
                         "id": "9BeguTeV",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/mv1kFnm.png",
@@ -231,6 +238,20 @@
                                 "variant-name": "Branco e Preto"
                             }
                         ]
+                    },
+                    {
+                        "title": "",
+                        "company": "",
+                        "id": "",
+                        "has-variants": false,
+                        "is-product-margin": true,
+                        "Images": [
+                            {
+                                "src": "",
+                                "is-variant": "false",
+                                "variant-name": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -238,6 +259,13 @@
     },
     {
         "product-type": "chuteiras-adidas",
+        "has-banner": false,
+        "banner-src": [
+            {
+                "banner-pc": "",
+                "banner-mobile": ""
+            }
+        ],
         "products": [
             {
                 "company": "Adidas",
@@ -248,6 +276,7 @@
                         "company": "Adidas",
                         "id": "FQKtmqAU",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/ZuWChCX.png",
@@ -306,6 +335,7 @@
                         "company": "Adidas",
                         "id": "PWvLpkte",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/f6Gawa9.png",
@@ -344,6 +374,7 @@
                         "company": "Adidas",
                         "id": "qhysZSlk",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/9TqNxdi.png",
@@ -392,6 +423,7 @@
                         "company": "Adidas",
                         "id": "J5Qwhc05",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/097gUP2.png",
@@ -434,6 +466,20 @@
                                 "variant-name": "Azul"
                             }
                         ]
+                    },
+                    {
+                        "title": "",
+                        "company": "",
+                        "id": "",
+                        "has-variants": false,
+                        "is-product-margin": true,
+                        "Images": [
+                            {
+                                "src": "",
+                                "is-variant": "false",
+                                "variant-name": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -441,6 +487,13 @@
     },
     {
         "product-type": "chuteiras-puma",
+        "has-banner": true,
+        "banner-src": [
+            {
+                "banner-pc": "https://i.imgur.com/pzYqU2L.png",
+                "banner-mobile": "https://i.imgur.com/t763aZD.png"
+            }
+        ],
         "products": [
             {
                 "company": "Puma",
@@ -451,6 +504,7 @@
                         "company": "Puma",
                         "id": "QbZliPhs",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/Fp7lrP1.png",
@@ -489,6 +543,7 @@
                         "company": "Puma",
                         "id": "gyCSW996",
                         "has-variants": true,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/ypdjRoi.png",
@@ -536,6 +591,20 @@
                                 "variant-name": "Preto"
                             }
                         ]
+                    },
+                    {
+                        "title": "",
+                        "company": "",
+                        "id": "",
+                        "has-variants": false,
+                        "is-product-margin": true,
+                        "Images": [
+                            {
+                                "src": "",
+                                "is-variant": "false",
+                                "variant-name": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -543,6 +612,14 @@
     },
     {
         "product-type": "meias",
+        "has-banner": false,
+        "ref": "meiasRef",
+        "banner-src": [
+            {
+                "banner-pc": "",
+                "banner-mobile": ""
+            }
+        ],
         "products": [
             {
                 "is-categorized-by-company": false,
@@ -554,6 +631,7 @@
                         "company": "",
                         "id": "grEKhh1L",
                         "has-variants": false,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/41AEIcg.png",
@@ -572,6 +650,7 @@
                         "company": "",
                         "id": "CulYo4Ec",
                         "has-variants": false,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/yje6il9.png",
@@ -589,6 +668,20 @@
                                 "variant-name": ""
                             }
                         ]
+                    },
+                    {
+                        "title": "",
+                        "company": "",
+                        "id": "",
+                        "has-variants": false,
+                        "is-product-margin": true,
+                        "Images": [
+                            {
+                                "src": "",
+                                "is-variant": "false",
+                                "variant-name": ""
+                            }
+                        ]
                     }
                 ]
             }
@@ -596,6 +689,14 @@
     },
     {
         "product-type": "necessaires",
+        "ref": "necessairesRef",
+        "has-banner": false,
+        "banner-src": [
+            {
+                "banner-pc": "",
+                "banner-mobile": ""
+            }
+        ],
         "products": [
             {
                 "is-categorized-by-company": false,
@@ -607,6 +708,7 @@
                         "company": "",
                         "id": "vw2r4TzT",
                         "has-variants": false,
+                        "is-product-margin": false,
                         "Images": [
                             {
                                 "src": "https://i.imgur.com/KhgTfMU.png",
@@ -629,7 +731,35 @@
                                 "variant-name": ""
                             }
                         ]
-                    }  
+                    },
+                    {
+                        "title": "Nécessaire preta com detalhes em flor",
+                        "company": "",
+                        "id": "94JAk9rJ",
+                        "has-variants": false,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/oZiF7CT.png",
+                                "is-variant": false,
+                                "variant-name": ""
+                            }
+                        ]
+                    },
+                    {
+                        "title": "",
+                        "company": "",
+                        "id": "",
+                        "has-variants": false,
+                        "is-product-margin": true,
+                        "Images": [
+                            {
+                                "src": "",
+                                "is-variant": "false",
+                                "variant-name": ""
+                            }
+                        ]
+                    }
                 ]
             }
         ]
