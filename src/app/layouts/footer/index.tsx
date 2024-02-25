@@ -63,9 +63,11 @@ function Footer() {
                     <div className=' flex flex-col w-[150px] '>
                         <div className='text-white text-[19px] font-bold'>Siga-nos</div>
 
-                        <a className='flex items-center justify-center mt-5 w-[35px] h-[35px] rounded-full transition-all ease-linear delay-100 bg-[#9b9898] hover:bg-[#D83776]' href="https://www.instagram.com/costg_imports/" target="_blank">
-                            <Instagram className='w-[60%]' color='#141414'></Instagram>
-                        </a>
+                        <div className=' flex max-[900px]:justify-center'>
+                            <a className='flex items-center justify-center mt-5 w-[35px] h-[35px] rounded-full transition-all ease-linear delay-100 bg-[#9b9898] hover:bg-[#D83776]' href="https://www.instagram.com/costg_imports/" target="_blank">
+                                <Instagram className='w-[60%]' color='#141414'></Instagram>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

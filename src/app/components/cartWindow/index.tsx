@@ -126,7 +126,7 @@ function CartWindow({cartItems, isClickingOnCartIcon, closeCart, changeIsClickin
                     </div>
                 </>
             ) : (
-                <div className='absolute flex flex-col items-center justify-between right-[0px] top-[100px] w-[480px] h-[330px] bg-white rounded-xl border-4 border-[#E2B79F] z-50 max-[1300px]:mr-10 max-[720px]:mr-[60px]'>
+                <div className='absolute flex flex-col items-center justify-between right-[0px] top-[100px] w-[420px] h-[330px] bg-white rounded-xl border-4 border-[#E2B79F] z-50 max-[1300px]:mr-10 max-[720px]:mr-[60px] max-[500px]:w-full max-[500px]:mr-0 max-[500px]:border-0 max-[500px]:rounded-none max-[500px]:shadow-lg'>
                     <div className='w-full h-[79%] flex flex-col gap-2 items-center justify-center'>
                         <ShoppingCart size={90} strokeWidth={1} color='#5f5e5e'></ShoppingCart>
                         <div className='text-[# ] font-medium'>Seu carrinho está vazio</div>
