@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "CostaG Imports",
   description: "Os melhores produtos de esporte você encontra aqui!",
-  icons: "https://i.imgur.com/ltTYY2S.png"
+  icons: "https://i.imgur.com/Csvg6vq.png"
 };
 
 export default function RootLayout({
