@@ -8,7 +8,7 @@ function Footer() {
 
             <div className='w-full h-[6px] bg-gradient-to-r from-black/45 to-[#ECBCA1]'></div>
 
-            <div className=' flex flex-col items-center w-full max-[900px]:h-[500px] bg-[#141414]'>
+            <div className=' flex flex-col items-center w-full h-[350px] max-[900px]:h-[500px] bg-[#141414]'>
 
                 <div className=' mt-8 w-full h-fit flex flex-col justify-center items-center'>
                     <div className=' w-full flex justify-center'>

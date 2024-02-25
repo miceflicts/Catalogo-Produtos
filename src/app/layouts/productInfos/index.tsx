@@ -140,7 +140,7 @@ function ProductInfos({productInfos, pathname, hasAddedNewProductsToCart} : Prod
 
                 <div className='flex flex-col gap-2 w-full h-[130px] rounded-xl mt-6 mb-6'>
 
-                <a href={`https://wa.me/556492913815?text=${greetingtext},%20tudo%20bem%3F%0AVocê%20consegue%20me%20falar%20mais%20sobre%20a%20*${productInfos.title}*${activeProductVariant.VariantWhatsAppMessage.length > 0 ? `%0a${activeProductVariant.VariantWhatsAppMessage}%0a` : "%0a"}*Link:*%20${pathname}`} className='h-2/4' target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/556492913815?text=${greetingtext},%20tudo%20bem%3F%0AVocê%20consegue%20me%20falar%20mais%20sobre%20a%20*${productInfos.title}*${activeProductVariant.VariantWhatsAppMessage.length > 0 ? `%0a${activeProductVariant.VariantWhatsAppMessage}%0a` : "%0a"}*Link:*%20https://catalogo-produtos-seven.vercel.app${pathname}`} className='h-2/4' target="_blank" rel="noopener noreferrer">
                     <div className='flex pisca gap-1 items-center justify-center h-full transition-all ease-in-out delay-100 hover:scale-[1.03] bg-green-600 hover:bg-green-600/80 rounded-2xl cursor-pointer'>
                         <div className='text-white font-bold'>Comprar pelo WhatsApp</div>
                     </div>
