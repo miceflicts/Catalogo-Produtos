@@ -1,0 +1,9 @@
+.custom-scrollbar {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #dddddd #f4f4f4; /* For Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Width of vertical scrollbar */
+}
+

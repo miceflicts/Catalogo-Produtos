@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import CartProduct from '../cartProduct';
+import "./index.css"
 
 interface CartWindowProps {
     cartItems: any;
@@ -109,7 +110,7 @@ function CartWindow({cartItems, isClickingOnCartIcon, closeCart, changeIsClickin
                 <>
                     <div className='flex flex-col items-center absolute right-[0px] top-[100px] w-[420px] h-fit bg-white rounded-xl border-4 border-[#E2B79F] z-50 max-[1300px]:mr-10 max-[720px]:mr-[60px] max-[500px]:w-full max-[500px]:mr-0 max-[500px]:border-0 max-[500px]:rounded-none max-[500px]:shadow-lg'>
                         
-                        <div className='flex flex-col items-center w-full h-full max-h-[350px] overflow-y-scroll overflow-x-hidden'>
+                        <div className='flex flex-col items-center w-full h-full max-h-[350px] overflow-y-scroll overflow-x-hidden custom-scrollbar'>
                             {cartProducts.map((product:any, index:number) => (
                                 <CartProduct key={index} index={index} productImage={product.ImageSrc} productTitle={product.ProductName} productQuantity={product.Quantity} isRemovingProduct={handleIsRemovingProduct} hasChangedProductQuantity={handleHasChangedProductQuantity}></CartProduct>
                             ))}
