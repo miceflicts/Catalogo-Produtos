@@ -91,6 +91,11 @@ function Header({hasAddedProductToCart,} : HeaderProps) {
     <>
         <div className=' flex flex-col w-full'>
 
+            <div className="flex items-center justify-center w-full h-[35px] bg-gradient-to-r from-[#c98962] to-[#ECBCA1]">
+                <div className='text-[14px] text-white font-bold'>COSTAG IMPORTS - QUALIDADE E CONFIANÇA</div>
+            </div>
+
+
             <div className='flex justify-center items-center w-full h-[120px] max-[720px]:h-[100px] bg-[#141414]'>
 
                 <div className=' flex justify-between relative items-center resize-none w-[1300px] h-full  '>
