@@ -5,15 +5,29 @@ import { Truck, Undo2, ShieldCheck, Award, Plus, Minus } from 'lucide-react'
 import ProductVariantCard from '@/app/components/productVariantCard';
 interface ProductsImageProps {
     productInfos: any;
+    pathname: string;
     hasAddedNewProductsToCart: () => void;
 }
 
-function ProductInfos({productInfos, hasAddedNewProductsToCart} : ProductsImageProps) {
+function ProductInfos({productInfos, pathname, hasAddedNewProductsToCart} : ProductsImageProps) {
 
     const [isHoveringBuyButton, setIsHoveringBuyButton] = useState(false)
     const [numberOfProductsToBuy, setNumberOfProductsToBuy] = useState(1)
 
     const [activeProductVariant, setActiveProductVariant] = useState({Index: 0, VariantName: "Cor: ", VariantWhatsAppMessage: `*Cor*: `, ImageSrc: ""})
+
+    const objDate = new Date();
+    const hours = objDate.getHours();
+
+    var greetingtext = ""
+
+    if (hours < 12){
+        greetingtext = "Bom%20dia"
+    } if (hours > 12 && hours < 18){
+            greetingtext = "Boa%20tarde"
+    } else{
+        greetingtext = "Boa%20noite"
+    }
 
     const handleIsHoveringBuyButton = () => {
         setIsHoveringBuyButton(!isHoveringBuyButton);
@@ -47,6 +61,7 @@ function ProductInfos({productInfos, hasAddedNewProductsToCart} : ProductsImageP
     }, [productInfos])
     
 
+    
   return (
     <>
         <div className=' flex items-center justify-center max-[1000px]:min-w-[90%] w-[35%] max-[600px]:min-w-[100vw] rounded-xl h-fit bg-white shadow-lg'>
@@ -125,13 +140,11 @@ function ProductInfos({productInfos, hasAddedNewProductsToCart} : ProductsImageP
 
                 <div className='flex flex-col gap-2 w-full h-[130px] rounded-xl mt-6 mb-6'>
 
-                <a href={`https://wa.me/556492913815?text=Boa%20tarde,%20tudo%20bem%3F%0AGostaria%20de%20saber%20mais%20sobre%20a%20*${productInfos.title}*%0a${activeProductVariant.VariantWhatsAppMessage}`} className='h-2/4' target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/556492913815?text=${greetingtext},%20tudo%20bem%3F%0AVocê%20consegue%20me%20falar%20mais%20sobre%20a%20*${productInfos.title}*${activeProductVariant.VariantWhatsAppMessage.length > 0 ? `%0a${activeProductVariant.VariantWhatsAppMessage}%0a` : "%0a"}*Link:*%20${pathname}`} className='h-2/4' target="_blank" rel="noopener noreferrer">
                     <div className='flex pisca gap-1 items-center justify-center h-full transition-all ease-in-out delay-100 hover:scale-[1.03] bg-green-600 hover:bg-green-600/80 rounded-2xl cursor-pointer'>
                         <div className='text-white font-bold'>Comprar pelo WhatsApp</div>
                     </div>
                 </a>
-
-
 
                     <div className='flex items-center justify-center h-2/4 border-2 transition-all ease-linear delay-100 border-gray-300 hover:bg-[#3A2A2F] hover:border-[#3A2A2F] rounded-2xl cursor-pointer' onMouseEnter={handleIsHoveringBuyButton} onMouseLeave={handleIsHoveringBuyButton} onClick={handleAddToCartClick}>
                         <div className={` transition-all ease-linear delay-100 ${isHoveringBuyButton ? "text-white" : "text-black/65"} font-medium`}>Adicionar ao Carrinho</div>

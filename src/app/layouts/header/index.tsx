@@ -9,7 +9,7 @@ interface HeaderProps {
     hasAddedProductToCart?: any;
 }
 
-function Header({hasAddedProductToCart} : HeaderProps) {
+function Header({hasAddedProductToCart,} : HeaderProps) {
   
     const [isShowingSearchArea, setIsShowingSearchArea] = useState(false)
     const [isHoveringCartDiv, setIsHoveringCartDiv] = useState(false)
@@ -17,6 +17,7 @@ function Header({hasAddedProductToCart} : HeaderProps) {
     const [isShowingCart, setIsShowingCart] = useState(false)
 
     const [isClickingOnCartIcon, setIsClickingOnCartIcon] = useState(false);
+
 
     const [cartItems, setCartItems] = useState<any[]>([]);
 
@@ -27,6 +28,7 @@ function Header({hasAddedProductToCart} : HeaderProps) {
     const handleUpdateCartItems = () => {
         // Retrieve cart items from local storage
         const storedCartItems = JSON.parse(localStorage.getItem('cartItems') || '[]');
+
         setCartItems(storedCartItems);
     };
     
@@ -50,6 +52,7 @@ function Header({hasAddedProductToCart} : HeaderProps) {
     const handleCartClick = () => {
         setIsShowingCart(!isShowingCart)
     }
+
     
     useEffect(() => {
       handleUpdateCartItems()

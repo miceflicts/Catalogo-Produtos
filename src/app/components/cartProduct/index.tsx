@@ -53,18 +53,18 @@ function CartProduct({index, productImage, productTitle, productQuantity, isRemo
 
             <div className='flex items-center gap-2 w-[70%] h-[30px] mt-3'>
                 <div className='flex justify-between items-center w-full h-full bg-gray-200/80 shadow-xl rounded-3xl'>
-                    <div className='w-[20px] h-[20px] ml-2 bg-gray-300 rounded-md flex items-center justify-center cursor-pointer' onClick={handleRemoveProductQuantity}>
+                    <div className='w-[20px] h-[20px] ml-2 bg-gray-300 hover:bg-gray-400/60 rounded-md flex items-center justify-center cursor-pointer' onClick={handleRemoveProductQuantity}>
                         <Minus color="#5f5e5e"></Minus>
                     </div>
                     
                     <div className='text-[#5f5e5e] text-[14px]'>{productQuantitytoBuy}</div>
                     
-                    <div className='w-[20px] h-[20px] mr-2 bg-gray-300 rounded-md flex items-center justify-center cursor-pointer' onClick={handleAddProductQuantity}>
+                    <div className='w-[20px] h-[20px] mr-2 bg-gray-300 hover:bg-gray-400/60 rounded-md flex items-center justify-center cursor-pointer' onClick={handleAddProductQuantity}>
                         <Plus color='#5f5e5e'></Plus>
                     </div>
                 </div>
 
-                <div className='text-[13px] text-[#5f5e5e] cursor-pointer' onClick={handleRemoveProductClick}>Remover</div>
+                <div className='text-[13px] text-[#5f5e5e] hover:text-[#000000] cursor-pointer' onClick={handleRemoveProductClick}>Remover</div>
             </div>
         </div>
     </div>
