@@ -240,6 +240,114 @@
                         ]
                     },
                     {
+                        "title": "Chuteira Nike quadra Phantom GX Elite",
+                        "company": "Nike",
+                        "id": "35ltXufD",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/Y38mrIY.png",
+                                "is-variant": true,
+                                "variant-name": "Azul e Preto"
+                            },
+                            {
+                                "src": "https://i.imgur.com/LwuslQ4.png",
+                                "is-variant": false,
+                                "variant-name": "Azul e Preto"
+                            },
+                            {
+                                "src": "https://i.imgur.com/d8qDVJI.png",
+                                "is-variant": true,
+                                "variant-name": "Laranja e Amarelo"
+                            },
+                            {
+                                "src": "https://i.imgur.com/KvIttJu.png",
+                                "is-variant": false,
+                                "variant-name": "Laranja e Amarelo"
+                            },
+                            {
+                                "src": "https://i.imgur.com/CWMB5pa.png",
+                                "is-variant": true,
+                                "variant-name": "Preto e Cinza"
+                            },
+                            {
+                                "src": "https://i.imgur.com/oL3VTbp.png",
+                                "is-variant": false,
+                                "variant-name": "Preto e Cinza"
+                            },
+                            {
+                                "src": "https://i.imgur.com/VUSzcUw.png",
+                                "is-variant": true,
+                                "variant-name": "Laranja"
+                            },
+                            {
+                                "src": "https://i.imgur.com/Zh9Za1L.png",
+                                "is-variant": false,
+                                "variant-name": "Laranja"
+                            },
+                            {
+                                "src": "https://i.imgur.com/Vz1gtUy.png",
+                                "is-variant": true,
+                                "variant-name": "Azul e Branco"
+                            },
+                            {
+                                "src": "https://i.imgur.com/oxYi1Dj.png",
+                                "is-variant": false,
+                                "variant-name": "Azul e Branco"
+                            },
+                            {
+                                "src": "https://i.imgur.com/K4yGdpE.png",
+                                "is-variant": true,
+                                "variant-name": "Azul Marinho"
+                            },
+                            {
+                                "src": "https://i.imgur.com/Kx5motM.png",
+                                "is-variant": false,
+                                "variant-name": "Azul e Branco"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Chuteira society Nike Phantom GX Elite DF Link TF",
+                        "company": "Nike",
+                        "id": "tcfH7QEo",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/VCMaYdx.png",
+                                "is-variant": true,
+                                "variant-name": "Azul e Preto"
+                            },
+                            {
+                                "src": "https://i.imgur.com/qBY4j4b.png",
+                                "is-variant": true,
+                                "variant-name": "Laranja"
+                            },
+                            {
+                                "src": "https://i.imgur.com/ANe7KLr.png",
+                                "is-variant": true,
+                                "variant-name": "Verde e Amarelo"
+                            },
+                            {
+                                "src": "https://i.imgur.com/sArgNBK.png",
+                                "is-variant": true,
+                                "variant-name": "Ciano e Branco"
+                            },
+                            {
+                                "src": "https://i.imgur.com/y7VylSf.png",
+                                "is-variant": true,
+                                "variant-name": "Preto e Branco"
+                            },
+                            {
+                                "src": "https://i.imgur.com/bl4I0du.png",
+                                "is-variant": true,
+                                "variant-name": "Verde Escuro e Verde Claro"
+                            }
+                        ]
+                    },
+                    {
                         "title": "",
                         "company": "",
                         "id": "",
