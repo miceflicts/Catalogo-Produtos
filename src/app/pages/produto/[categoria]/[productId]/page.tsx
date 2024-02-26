@@ -1,6 +1,6 @@
 "use client"
 
-import React,{useState, useEffect} from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import Header from '@/app/layouts/header'
 import Footer from '@/app/layouts/footer'
 import ProductImages from '@/app/layouts/productImages'
@@ -21,12 +21,18 @@ function Produto() {
     const splitPathName = pathname.split("/");
     const productId = splitPathName.slice(4).join('/');
 
+    const myRef = useRef<HTMLDivElement>(null);
+
     const regex = /\/produto\/([^\/]+)/;
     const resultado = pathname.match(regex);
     
 
     const handleHasAddedNewProductsToCart = () => {
       setHasAddedProductToCart(!hasAddedProductToCart)
+
+      if (myRef.current) {
+        myRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
     }
 
     useEffect(() => {
@@ -56,7 +62,9 @@ function Produto() {
     
   return (
     <>
-      <Header hasAddedProductToCart={hasAddedProductToCart}></Header>
+      <div ref={myRef}>
+        <Header hasAddedProductToCart={hasAddedProductToCart}></Header>
+      </div>
 
       <div className=' w-full h-full flex flex-col items-center gap-20'>
         
