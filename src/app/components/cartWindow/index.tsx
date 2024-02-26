@@ -133,7 +133,7 @@ function CartWindow({cartItems, isClickingOnCartIcon, closeCart, changeIsClickin
                     </div>
 
                     <Link href="/" className='w-[90%] h-[50px] mb-5'>
-                        <div className='flex gap-1 items-center justify-center h-full w-full transition-all ease-in-out delay-100 hover:scale-[1.03] bg-[#E2B79F] hover:bg-[#cea690] rounded-2xl cursor-pointer'>
+                        <div className='flex gap-1 items-center justify-center h-full w-full transition-all ease-in-out delay-100 hover:scale-[1.03] bg-[#E2B79F] hover:bg-[#cea690] rounded-2xl cursor-pointer' onClick={() => {closeCart()}}>
                             <div className='text-white font-bold'>Veja nossos Produtos</div>
                         </div>
                     </Link>
