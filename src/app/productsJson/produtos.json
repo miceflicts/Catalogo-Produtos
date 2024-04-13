@@ -348,6 +348,85 @@
                         ]
                     },
                     {
+                        "title": "Chuteira futsal Lunar Gato Nike",
+                        "company": "Nike",
+                        "id": "ADDU5ygC",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/xyBgKN8.jpg",
+                                "is-variant": true,
+                                "variant-name": "Preto e Branco"
+                            },
+                            {
+                                "src": "https://i.imgur.com/MZtWwgW.jpg",
+                                "is-variant": false,
+                                "variant-name": "Preto e Branco"
+                            },
+                            {
+                                "src": "https://i.imgur.com/JZZ6k7X.jpg",
+                                "is-variant": true,
+                                "variant-name": "Branco e Laranja"
+                            },
+                            {
+                                "src": "https://i.imgur.com/dQaLmW7.jpg",
+                                "is-variant": false,
+                                "variant-name": "Branco e Laranja"
+                            },
+                            {
+                                "src": "https://i.imgur.com/0c0Ry58.jpg",
+                                "is-variant": true,
+                                "variant-name": "Preto e Marrom"
+                            },
+                            {
+                                "src": "https://i.imgur.com/N0LBcGs.jpg",
+                                "is-variant": false,
+                                "variant-name": "Preto e Marrom"
+                            },
+                            {
+                                "src": "https://i.imgur.com/btRZFij.jpg",
+                                "is-variant": true,
+                                "variant-name": "Preto e Verde"
+                            },
+                            {
+                                "src": "https://i.imgur.com/HqYxcMp.jpg",
+                                "is-variant": false,
+                                "variant-name": "Preto e Verde"
+                            },
+                            {
+                                "src": "https://i.imgur.com/Aw5o9iX.jpg",
+                                "is-variant": true,
+                                "variant-name": "Preto e Roxo"
+                            },
+                            {
+                                "src": "https://i.imgur.com/EcLQXBL.jpg",
+                                "is-variant": false,
+                                "variant-name": "Preto e Roxo"
+                            },
+                            {
+                                "src": "https://i.imgur.com/DXwgqT4.jpg",
+                                "is-variant": true,
+                                "variant-name": "Branco e Verde"
+                            },
+                            {
+                                "src": "https://i.imgur.com/XamzD64.jpg",
+                                "is-variant": false,
+                                "variant-name": "Branco e Verde"
+                            },
+                            {
+                                "src": "https://i.imgur.com/ZvHpbVg.jpg",
+                                "is-variant": true,
+                                "variant-name": "Branco e Marrom"
+                            },
+                            {
+                                "src": "https://i.imgur.com/bi480bM.jpg",
+                                "is-variant": false,
+                                "variant-name": "Branco e Marrom"
+                            }
+                        ]
+                    },
+                    {
                         "title": "",
                         "company": "",
                         "id": "",
@@ -586,6 +665,230 @@
                                 "src": "",
                                 "is-variant": "false",
                                 "variant-name": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "product-type": "camiestas",
+        "ref": "camisetasRef",
+        "has-banner": false,
+        "banner-src": [
+            {
+                "banner-pc": "",
+                "banner-mobile": ""
+            }
+        ],
+        "products": [
+            {
+                "is-categorized-by-company": false,
+                "company": "",
+                "category-title": "Camisetas de Futebol",
+                "Products": [
+                    {
+                        "title": "Camiseta Flamengo",
+                        "company": "",
+                        "id": "nMMJDrGl",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/CqdfdKG.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/0tkqCfr.png",
+                                "is-variant": false,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/JF6tmAM.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/Tp1U0rC.png",
+                                "is-variant": false,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/AaE1CHI.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 3"
+                            },
+                            {
+                                "src": "https://i.imgur.com/XkJ6vgs.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 4"
+                            },
+                            {
+                                "src": "https://i.imgur.com/1qARt5d.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 5"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Camiseta Palmeiras",
+                        "company": "",
+                        "id": "BHjYMeFN",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/qsOCwDm.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/QK0utsw.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/URDdnS2.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 3"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Camiseta Real Madrid",
+                        "company": "",
+                        "id": "JqFSeJ8l",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/5AqM68B.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/bG6PK9h.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/ySVSdVT.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 3"
+                            },
+                            {
+                                "src": "https://i.imgur.com/ZWMyxs8.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 4"
+                            },
+                            {
+                                "src": "https://i.imgur.com/atXHWR5.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 5"
+                            },
+                            {
+                                "src": "https://i.imgur.com/r8p7sH1.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 6"
+                            },
+                            {
+                                "src": "https://i.imgur.com/C2Mn88c.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 7"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Camiseta São Paulo",
+                        "company": "",
+                        "id": "y0AJyFJF",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/tyQgRRq.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/hbmtxxH.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/PRZFJjw.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 3"
+                            },
+                            {
+                                "src": "https://i.imgur.com/WGxdOVP.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 4"
+                            },
+                            {
+                                "src": "https://i.imgur.com/LEcPVTc.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 5"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Camiseta Portugal",
+                        "company": "",
+                        "id": "KCQ1Y8YO",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/g0peqtQ.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/QJyHiok.png",
+                                "is-variant": false,
+                                "variant-name": "Tipo 1"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Camiseta Corinthians",
+                        "company": "",
+                        "id": "9YnRohra",
+                        "has-variants": true,
+                        "is-product-margin": false,
+                        "Images": [
+                            {
+                                "src": "https://i.imgur.com/qhuWQgp.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 1"
+                            },
+                            {
+                                "src": "https://i.imgur.com/nhs0wsp.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/IQPOGFz.png",
+                                "is-variant": false,
+                                "variant-name": "Tipo 2"
+                            },
+                            {
+                                "src": "https://i.imgur.com/R9h1CLV.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 3"
+                            },
+                            {
+                                "src": "https://i.imgur.com/Ta6kFUa.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 4"
+                            },
+                            {
+                                "src": "https://i.imgur.com/4HBI9mT.png",
+                                "is-variant": true,
+                                "variant-name": "Tipo 5"
                             }
                         ]
                     }
